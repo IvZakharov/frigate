@@ -1,0 +1,92 @@
+@import "src/styles/variables";
+
+.footer {
+  background-color: #353535;
+  padding: 30px 0;
+
+  .logo {
+    margin-bottom: 10px;
+    display: block;
+
+    @media (min-width: 1200px) {
+      margin-bottom: 20px;
+    }
+
+    a {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 25px;
+      color: white;
+
+      @media (min-width: 768px) {
+        font-size: 22px;
+        line-height: 30px;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 36px;
+      }
+
+      span {
+        color: $primary;
+      }
+    }
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+
+
+  .nav {
+
+
+    ul {
+      li {
+        margin-bottom: 2px;
+        a {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 22px;
+          color: rgba(255, 255, 255, 0.8);
+          transition: color .2s ease-in-out;
+
+          &:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .address {
+
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    a {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 19px;
+      transition: color .2s ease-in-out;
+      color: rgba(255, 255, 255, 0.8);
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+
+
+

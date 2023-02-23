@@ -1,0 +1,26 @@
+@import "src/styles/variables";
+
+.header {
+  position: relative;
+  z-index: 10;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 15px;
+    }
+
+    span {
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.405em;
+      text-transform: uppercase;
+    }
+  }
+}
