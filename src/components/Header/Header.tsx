@@ -1,32 +1,36 @@
 import styles from "./Header.module.scss";
 import React from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { Patua_One } from "@next/font/google";
-
-const patuaOne = Patua_One({
-  weight: ["400"],
-  style: ["normal"],
-  subsets: ["latin"],
-});
+import Logo from "@/components/Header/Logo";
+import MenuButton from "@/components/Header/MenuButton";
+import SocialButton from "@/ui/SocialButton/SocialButton";
+import SearchInput from "@/ui/SearchInput/SearchInput";
+import Nav from "@/components/Header/MainNav";
+import CtaHeader from "@/components/Cta/CtaHeader";
 
 const Header: React.FC = () => {
   return (
-    <div className={"container"}>
-      <header className={styles.header}>
-        <Link href={"/"}>
-          <div className={styles.logo}>
-            <Image
-              src={"images/logo/logo.svg"}
-              alt={"Frigate logo"}
-              width={24}
-              height={26}
-            />
-            <span className={patuaOne.className}>Frigate</span>
+    <header className={styles.header}>
+      <div className={"container"}>
+        <div className={styles.top}>
+          <Logo />
+          <div className={"hidden md:block flex-1"}>
+            <SearchInput />
           </div>
-        </Link>
-      </header>
-    </div>
+          <div className={"hidden md:flex items-center gap-4"}>
+            <SocialButton link={"#"} theme={"light"} social={"facebook"} />
+            <SocialButton link={"#"} theme={"light"} social={"instagram"} />
+            <SocialButton link={"#"} theme={"light"} social={"twitter"} />
+            <SocialButton link={"#"} theme={"light"} social={"youtube"} />
+          </div>
+
+          <MenuButton />
+        </div>
+        <div className={styles.bottom}>
+          <Nav />
+          <CtaHeader />
+        </div>
+      </div>
+    </header>
   );
 };
 

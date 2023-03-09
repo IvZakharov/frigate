@@ -1,19 +1,21 @@
 $text: #111111;
-$text-gray: #707070;
-$primary: #0065D9;
-$primary-light: #E0EDFA;
+$gray: #bfbfbf;
+$primary: #024e5b;
+$primary-light: #e0edfa;
 $disable: #989898;
-$black: #111111;
+$black: #333333;
 
-$yellow: #FFCC00;
-$coral: #F29191;
-$green: #ADFF00;
+$yellow: #ffc93f;
+$coral: #f29191;
+$green: #adff00;
 
 $error: #d32f2f;
 $secondary: #5487ab;
 
 $light-grey: #d3d3d3;
-$background-white: #f9f9f9;
+$background: #f8f8f8;
 $container-width: 90%;
 $duration: 0.15s;
 $disable: rgb(155, 155, 155);
+
+$timing: cubic-bezier(0.165, 0.84, 0.44, 1);

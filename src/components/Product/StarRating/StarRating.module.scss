@@ -1,0 +1,31 @@
+@import "../../../styles/variables";
+
+.starRating {
+  .title {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: right;
+    margin-bottom: 7px;
+  }
+
+  .stars {
+    white-space: nowrap;
+    button {
+      margin-right: 4px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .button {
+    transition: transform 0.1s ease-in-out;
+
+    &:active {
+      transform: scale(1.4);
+    }
+  }
+}

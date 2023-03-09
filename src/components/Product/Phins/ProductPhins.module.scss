@@ -1,0 +1,14 @@
+@import "../../../styles/variables";
+
+.phins {
+  display: flex;
+  align-items: center;
+
+  li {
+    margin-right: 13px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

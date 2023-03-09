@@ -1,0 +1,132 @@
+@import "../../../styles/variables";
+
+.swiper {
+  width: 100vw;
+  padding-right: 40px !important;
+  padding-top: 25px !important;
+  padding-bottom: 70px !important;
+
+  @media (min-width: 600px) {
+    padding-right: 100px !important;
+  }
+
+  @media (min-width: 768px) {
+    padding-right: 50px !important;
+  }
+
+  @media (min-width: 900px) {
+    padding-right: 120px !important;
+  }
+
+  @media (min-width: 1024px) {
+    padding-right: 50px !important;
+  }
+
+  @media (min-width: 1200px) {
+    padding-right: 120px !important;
+  }
+
+  @media (min-width: 1320px) {
+    padding-right: 80px !important;
+    padding-top: 40px !important;
+    padding-bottom: 100px !important;
+  }
+
+  @media (min-width: 1600px) {
+    padding-right: 200px !important;
+  }
+
+  @media (min-width: 1800px) {
+    padding-right: 300px !important;
+  }
+
+  @media (min-width: 2000px) {
+    padding-right: 400px !important;
+  }
+
+  @media (min-width: 2200px) {
+    padding-right: 500px !important;
+  }
+
+  @media (min-width: 2400px) {
+    padding-right: 600px !important;
+  }
+
+  @media (min-width: 2600px) {
+    padding-right: 700px !important;
+  }
+
+  @media (min-width: 2800px) {
+    padding-right: 800px !important;
+  }
+
+  @media (min-width: 3000px) {
+    padding-right: 900px !important;
+  }
+
+  @media (min-width: 3200px) {
+    padding-right: 1000px !important;
+  }
+
+  @media (min-width: 3400px) {
+    padding-right: 1100px !important;
+  }
+
+  .slide {
+    width: 330px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @media (min-width: 1320px) {
+      width: 360px;
+    }
+  }
+}
+
+.arrows {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+  }
+}
+
+.arrowPrev,
+.arrowNext {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 1px solid $black;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  @media (min-width: 1200px) {
+    width: 36px;
+    height: 36px;
+  }
+
+  &:hover {
+    background-color: rgba($black, 0.1);
+  }
+
+  &:active {
+    background-color: rgba($black, 0.2);
+  }
+}
+.arrowPrev {
+  transform: rotate(180deg);
+  padding-left: 2px;
+}
+.arrowNext {
+  padding-left: 2px;
+}

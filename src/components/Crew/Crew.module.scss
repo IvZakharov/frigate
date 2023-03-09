@@ -1,0 +1,227 @@
+@import "src/styles/variables";
+
+.crew {
+  .thumb {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+
+    @media (min-width: 768px) {
+      height: 150px;
+    }
+
+    @media (min-width: 1024px) {
+      height: 200px;
+    }
+
+    @media (min-width: 1280px) {
+      height: 290px;
+    }
+  }
+
+  .swiperThumbs {
+    .slide {
+      @media (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .name {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 3px;
+
+        @media (min-width: 768px) {
+          margin-bottom: 0;
+          margin-top: 5px;
+          order: 9999;
+          font-size: 16px;
+          line-height: 17px;
+        }
+
+        @media (min-width: 1280px) {
+          font-size: 18px;
+          line-height: 20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .image {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    @media (min-width: 576px) {
+      height: 360px;
+    }
+    @media (min-width: 576px) {
+      height: 360px;
+    }
+    @media (min-width: 768px) {
+      height: 430px;
+    }
+    @media (min-width: 1024px) {
+      height: 500px;
+    }
+    @media (min-width: 1280px) {
+      height: 600px;
+    }
+  }
+
+  .swiper {
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+
+    @media (min-width: 1320px) {
+      width: 510px;
+    }
+  }
+
+  .content {
+    padding: 0 20px;
+
+    @media (min-width: 1320px) {
+      padding-top: 100px;
+      padding-left: 100px;
+      height: 100%;
+    }
+
+    .title {
+      font-weight: 900;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 5px;
+
+      @media (min-width: 1024px) {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 15px;
+      }
+    }
+
+    .age {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 15px;
+
+      @media (min-width: 1024px) {
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+
+    .quote {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 30px;
+
+      @media (min-width: 1024px) {
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      @media (min-width: 1320px) {
+        margin-bottom: 65px;
+      }
+    }
+
+    .feature {
+      margin-bottom: 30px;
+
+      h4 {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 3px;
+
+        @media (min-width: 1024px) {
+          margin-bottom: 5px;
+          font-size: 16px;
+          line-height: 19px;
+        }
+      }
+
+      p {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+
+        @media (min-width: 1024px) {
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    .watchReviews {
+      position: absolute;
+      top: 300px;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+
+      @media (min-width: 576px) {
+        top: 390px;
+      }
+
+      @media (min-width: 768px) {
+        position: relative;
+        top: 0;
+        margin-bottom: 30px;
+      }
+
+      @media (min-width: 1320px) {
+        margin-right: 100px;
+      }
+
+      .button {
+        width: 70px;
+        height: 70px;
+        border: 1px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        margin-right: 15px;
+        transition: transform 0.3s ease-in-out;
+
+        @media (min-width: 768px) {
+          border: 1px solid $black;
+
+          svg {
+            path {
+              fill: $black;
+            }
+          }
+        }
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #ffffff;
+
+        @media (min-width: 768px) {
+          color: $black;
+        }
+      }
+    }
+  }
+}

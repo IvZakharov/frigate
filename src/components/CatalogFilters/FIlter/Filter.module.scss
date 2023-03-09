@@ -1,0 +1,61 @@
+@import "src/styles/variables";
+
+.filter {
+  position: relative;
+
+  h4 {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #333333;
+    margin-bottom: 12px;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 10px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    position: relative;
+    z-index: 10;
+    transition: background-color 0.2s ease-in-out;
+
+    &:active {
+      background-color: rgba($black, 0.1);
+    }
+  }
+
+  ul {
+    position: absolute;
+    z-index: -1;
+    background: #333333;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+    left: 0;
+    top: calc(100% - 5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    li {
+      color: white;
+      border-bottom: 1px solid white;
+      position: relative;
+      margin-bottom: 10px;
+      line-height: 30px;
+
+      &:first-child {
+        margin-top: 15px;
+      }
+
+      &:last-child {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

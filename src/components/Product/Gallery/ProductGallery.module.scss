@@ -1,0 +1,39 @@
+@import "../../../styles/variables";
+
+.gallery {
+  padding: 0 30px;
+}
+
+.image {
+  max-width: 150px;
+  height: 100%;
+  position: relative;
+}
+
+.thumb {
+  position: relative;
+  width: 83px;
+  height: 78px;
+  margin-left: auto;
+}
+
+.swiperThumbs {
+  position: relative;
+  height: 100%;
+  display: flex !important;
+  align-items: center;
+
+  .slide {
+    width: 82.25px !important;
+    height: 77.84px !important;
+    margin-left: auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.3;
+  }
+
+  .wrapper {
+    height: auto;
+  }
+}

@@ -1,5 +1,3 @@
-const { fontFamily } = require("tailwindcss/defaultTheme");
-
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx}",
@@ -12,12 +10,7 @@ module.exports = {
       container: {
         padding: "0.625rem",
         center: true,
-        screens: { sm: "576px", md: "768px", lg: "1024px", xl: "1440px" },
-      },
-      extend: {
-        fontFamily: {
-          sans: ["var(--font-lato)", ...fontFamily.sans],
-        },
+        screens: { sm: "576px", md: "768px", lg: "1024px", xl: "1320px" },
       },
     },
   },

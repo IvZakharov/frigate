@@ -1,14 +1,20 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @import "./variables";
 @import "./libs/normalize";
+@import "./libs/buttons";
 
 html,
 body {
   padding: 0;
   margin: 0;
+  background-color: $background;
+  color: $black;
+}
+
+body {
+  font-family: "Lato", sans-serif;
 }
 
 a {
@@ -20,5 +26,148 @@ a {
   box-sizing: border-box;
 }
 
+a,
+p,
+b,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $black;
+}
 
+.main {
+  overflow-x: hidden;
+}
 
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: $black;
+}
+
+.productCatTitle {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.textGradient {
+  background: linear-gradient(
+    90deg,
+    rgba(253, 141, 27, 0.6) -0.12%,
+    rgba(254, 93, 11, 0.6) 99.88%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cardSwiper {
+  padding-bottom: 30px !important;
+
+  .swiper-pagination {
+    bottom: 0 !important;
+    padding: 0;
+  }
+
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #d9d9d9;
+    opacity: 1 !important;
+    background-color: transparent;
+  }
+
+  .swiper-pagination-bullet-active {
+    border: 1px solid $black;
+  }
+}
+
+.articleSwiper {
+  padding-bottom: 30px !important;
+
+  .swiper-pagination {
+    bottom: 20px !important;
+    text-align: left;
+    padding: 0;
+    transition: all 0.2s ease-in-out;
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border: 1px solid #d9d9d9;
+    opacity: 1 !important;
+    background-color: transparent;
+  }
+
+  .swiper-pagination-bullet-active {
+    border: 1px solid $black;
+    background-color: $black;
+  }
+}
+
+.swiper-button-disabled {
+  opacity: 0.3;
+
+  &:hover {
+    background-color: transparent !important;
+  }
+}
+
+.swiperThumbs {
+  .swiper-slide-thumb-active {
+    opacity: 1 !important;
+  }
+}
+
+.background {
+  background-color: $background;
+}
+
+.swiperReviewsThumbs {
+  .swiper-slide {
+    opacity: 0.3 !important;
+  }
+
+  .swiper-slide-thumb-active {
+    opacity: 1 !important;
+  }
+}
+
+.swiper-pagination {
+  padding: 0 !important;
+  position: relative !important;
+  bottom: 0 !important;
+  text-align: left !important;
+}
+
+.swiper-pagination-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  border: 1px solid #d9d9d9;
+  opacity: 1 !important;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent !important;
+}
+
+.swiper-pagination-bullet-active {
+  border: 1px solid $black !important;
+  background-color: $black !important;
+}
+
+.swiperCrewThumbs {
+  .swiper-slide-thumb-active {
+    opacity: 0;
+    visibility: hidden;
+    display: none !important;
+  }
+}

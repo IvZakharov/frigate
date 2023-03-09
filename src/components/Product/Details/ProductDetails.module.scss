@@ -1,0 +1,24 @@
+@import "../../../styles/variables";
+
+.details {
+  li {
+    padding-right: 30px;
+    display: flex;
+    align-items: start;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    img {
+      margin-right: 5px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}

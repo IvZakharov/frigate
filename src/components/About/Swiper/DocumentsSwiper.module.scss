@@ -1,0 +1,44 @@
+@import "../../../styles/variables";
+
+.documentsSwiper {
+  width: 100vw;
+
+  @media (min-width: 1280px) {
+    width: 75vw;
+  }
+
+  .image {
+    position: relative;
+
+    img {
+      width: auto;
+      margin-bottom: 15px;
+    }
+
+    figcaption {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      padding: 0 10px;
+    }
+  }
+
+  .swiper {
+    padding-right: 30px;
+
+    @media (min-width: 1280px) {
+      padding-right: 80px;
+    }
+
+    @media (min-width: 1600px) {
+      padding-right: 120px;
+    }
+    @media (min-width: 2000px) {
+      padding-right: 200px;
+    }
+
+    .slide {
+      width: auto;
+    }
+  }
+}

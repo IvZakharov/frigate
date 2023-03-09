@@ -3,6 +3,7 @@ import React, { ReactElement } from "react";
 
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import MobileMenu from "@/components/MobileMenu/MobileMenu";
 
 type Page = {
   children: ReactElement;
@@ -18,8 +19,9 @@ export const MainLayout: React.FC<Page> = ({ children }) => {
         <meta property="og:image" content="/img/head/meta.jpg" />
       </Head>
       <Header />
-
       <div className="main">{children}</div>
+
+      <MobileMenu />
       <Footer />
     </>
   );

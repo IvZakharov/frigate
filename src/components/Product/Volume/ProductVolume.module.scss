@@ -1,0 +1,19 @@
+@import "../../../styles/variables";
+
+.volume {
+  display: flex;
+  align-items: center;
+
+  li {
+    margin-right: 7px;
+    background: #e9e9e9;
+    border-radius: 5px;
+    padding: 10px 40px;
+    font-size: 14px;
+    line-height: 17px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

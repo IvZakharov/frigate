@@ -1,0 +1,35 @@
+@import "src/styles/variables";
+
+.videoGallery {
+  .swiper {
+    margin-bottom: 30px;
+
+    @media (min-width: 768px) {
+      border-radius: 10px;
+    }
+
+    @media (min-width: 1320px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .slide {
+    height: 315px;
+
+    @media (min-width: 768px) {
+      height: 400px;
+    }
+
+    @media (min-width: 1024px) {
+      height: 500px;
+    }
+
+    @media (min-width: 1320px) {
+      height: 700px;
+    }
+  }
+
+  .pagination {
+    width: 100%;
+  }
+}

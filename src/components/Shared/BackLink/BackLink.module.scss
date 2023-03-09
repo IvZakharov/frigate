@@ -1,0 +1,40 @@
+@import "src/styles/variables";
+
+.backLink {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  i {
+    margin-right: 15px;
+
+    svg {
+      width: 18px;
+      height: 7px;
+
+      path {
+        transition: fill 0.2s ease-in-out;
+      }
+    }
+  }
+
+  span {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 90%;
+    color: #bfbfbf;
+    transition: color 0.2s ease-in-out;
+  }
+
+  &:hover {
+    span {
+      color: $black;
+    }
+
+    svg {
+      path {
+        fill: $black;
+      }
+    }
+  }
+}

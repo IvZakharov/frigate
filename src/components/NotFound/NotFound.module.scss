@@ -1,0 +1,56 @@
+@import "src/styles/variables";
+
+.notFound {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    padding: 100px 0;
+  }
+
+  .subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .title {
+    font-weight: 900;
+    font-size: 160px;
+    line-height: 89%;
+    margin-bottom: 15px;
+    width: fit-content;
+
+    @media (min-width: 1320px) {
+      font-size: 220px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .text {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+
+    @media (min-width: 1320px) {
+      font-size: 24px;
+      margin-bottom: 75px;
+    }
+  }
+
+  .image {
+    @media (min-width: 768px) {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 50%;
+      transform: translateY(-35%);
+    }
+
+    @media (min-width: 1320px) {
+      width: 60%;
+    }
+  }
+}

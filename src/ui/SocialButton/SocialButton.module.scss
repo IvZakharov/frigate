@@ -1,0 +1,40 @@
+@import "src/styles/variables";
+
+.socialButton {
+}
+
+.light {
+  svg {
+    path {
+      transition: fill 0.3s ease-in-out;
+      fill: #bfbfbf;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      path {
+        fill: black;
+      }
+    }
+  }
+}
+
+.dark {
+  svg {
+    path {
+      transition: fill 0.3s ease-in-out;
+      fill: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      path {
+        fill: white;
+      }
+    }
+  }
+}
