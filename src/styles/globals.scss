@@ -38,7 +38,6 @@ h5 {
 }
 
 .main {
-  overflow-x: hidden;
 }
 
 .text {
@@ -72,6 +71,7 @@ h5 {
   .swiper-pagination {
     bottom: 0 !important;
     padding: 0;
+    text-align: center !important;
   }
 
   .swiper-pagination-bullet {

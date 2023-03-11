@@ -1,14 +1,19 @@
 import { MainLayout } from "@/layouts/MainLayout";
-import Hero from "@/components/Hero/Hero";
-import CtaMain from "@/components/Cta/CtaMain";
-import Advantages from "@/components/Advantages/Advantages";
-import ProductionProcess from "@/components/ProductionProcess/ProductionProcess";
-import Reviews from "@/components/Reviews/Reviews";
-import { photoGallery } from "@/data/gallery";
-import PhotoGallery from "@/components/PhotoGallery/PhotoGallery";
 import ThankYou from "@/components/ThankYou/ThankYou";
+import { useRecoilState } from "recoil";
+import { ToTopButtonState } from "@/atoms/ToTopButtonAtom";
+import React from "react";
 
-export default function Home() {
+export default function ThankYouPage() {
+  const [_, setToTopState] = useRecoilState(ToTopButtonState);
+
+  React.useEffect(() => {
+    setToTopState((prev) => ({
+      ...prev,
+      isFixed: true,
+    }));
+  }, []);
+
   return (
     <MainLayout>
       <ThankYou />

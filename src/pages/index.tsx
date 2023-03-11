@@ -8,6 +8,7 @@ import { photoGallery } from "@/data/gallery";
 import PhotoGallery from "@/components/PhotoGallery/PhotoGallery";
 import VideoGallery from "@/components/VideoGallery/VideoGallery";
 import Technologies from "@/components/Technologies/Technologies";
+import React from "react";
 
 export default function Home() {
   return (

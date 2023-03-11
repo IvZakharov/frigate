@@ -1,16 +1,22 @@
 import styles from "./MobileMenu.module.scss";
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const MobileNav: React.FC = () => {
+  const router = useRouter();
+
   return (
     <nav className={`${styles.nav}`}>
+      <h3 className={styles.subtitle}>Navigation</h3>
       <ul className={"mb-4"}>
         <li>
-          <h3>Navigation</h3>
-        </li>
-        <li>
-          <Link href={"/"} className={styles.link}>
+          <Link
+            href={"/"}
+            className={`${styles.link} ${
+              router.pathname === "/" ? styles.active : ""
+            }`}
+          >
             <i className={styles.icon}>
               <svg
                 width="33"
@@ -48,7 +54,12 @@ const MobileNav: React.FC = () => {
           </Link>
         </li>
         <li>
-          <Link href={"/catalog"} className={styles.link}>
+          <Link
+            href={"/catalog"}
+            className={`${styles.link} ${
+              router.pathname === "/catalog" ? styles.active : ""
+            }`}
+          >
             <i className={styles.icon}>
               <svg
                 width="33"
@@ -100,7 +111,12 @@ const MobileNav: React.FC = () => {
           </Link>
         </li>
         <li>
-          <Link href={"/contacts"} className={styles.link}>
+          <Link
+            href={"/contacts"}
+            className={`${styles.link} ${
+              router.pathname === "/contacts" ? styles.active : ""
+            }`}
+          >
             <i className={styles.icon}>
               <svg
                 width="33"
@@ -131,7 +147,7 @@ const MobileNav: React.FC = () => {
                 />
               </svg>
             </i>
-            <span>Catalog</span>
+            <span>Contacts</span>
             <i className={styles.arrow}>
               <svg
                 width="24"
@@ -153,12 +169,15 @@ const MobileNav: React.FC = () => {
         </li>
       </ul>
 
+      <h3 className={styles.subtitle}>More</h3>
       <ul className={"mb-4"}>
         <li>
-          <h3>More</h3>
-        </li>
-        <li>
-          <Link href={"/journal"} className={styles.link}>
+          <Link
+            href={"/journal"}
+            className={`${styles.link} ${
+              router.pathname === "/journal" ? styles.active : ""
+            }`}
+          >
             <i className={styles.icon}>
               <svg
                 width="33"
@@ -196,7 +215,12 @@ const MobileNav: React.FC = () => {
           </Link>
         </li>
         <li>
-          <Link href={"/about"} className={styles.link}>
+          <Link
+            href={"/about-us"}
+            className={`${styles.link} ${
+              router.pathname === "/about-us" ? styles.active : ""
+            }`}
+          >
             <i className={styles.icon}>
               <svg
                 width="33"
@@ -232,7 +256,12 @@ const MobileNav: React.FC = () => {
           </Link>
         </li>
         <li>
-          <Link href={"/contacts"} className={styles.link}>
+          <Link
+            href={"/help"}
+            className={`${styles.link} ${
+              router.pathname === "/help" ? styles.active : ""
+            }`}
+          >
             <i className={styles.icon}>
               <svg
                 width="33"
@@ -290,7 +319,7 @@ const MobileNav: React.FC = () => {
 
       <ul>
         <li>
-          <Link href={"/help"}>
+          <Link href={"/help"} className={styles.link}>
             <span>Help</span>
           </Link>
         </li>

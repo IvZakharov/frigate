@@ -1,0 +1,10 @@
+@import "src/styles/variables";
+
+.privacyPolicy {
+  padding-top: 70px;
+  padding-bottom: 50px;
+
+  @media (min-width: 1320px) {
+    padding-top: 155px;
+  }
+}

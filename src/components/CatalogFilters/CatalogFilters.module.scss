@@ -3,11 +3,18 @@
 .catalogFilters {
   background-color: #efefef;
   padding: 8px 0;
-  position: relative;
-  z-index: 10;
-  margin-bottom: 100px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 100;
+
+  @media (min-width: 768px) {
+    position: sticky;
+    top: 0;
+  }
 
   @media (min-width: 1320px) {
     padding: 25px 0;
+    display: block;
   }
 }

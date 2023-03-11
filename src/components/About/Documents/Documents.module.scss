@@ -1,6 +1,7 @@
 @import "../../../styles/variables";
 
 .documents {
+  overflow-x: hidden;
   .title {
     padding: 7px 30px;
     border-left: 1px solid $black;

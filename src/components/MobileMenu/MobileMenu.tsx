@@ -22,7 +22,7 @@ const MobileMenu: React.FC = () => {
             open: { translateY: 0 },
             close: { translateY: "100%" },
           }}
-          transition={{ duration: 0.6, ease: [0.04, 0.62, 0.23, 0.98] }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
         >
           <div className={styles.content}>
             <div className={"mb-8"}>

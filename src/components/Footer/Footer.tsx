@@ -6,10 +6,27 @@ import NewsletterForm from "@/components/Form/NewsletterForm";
 import FooterNav from "@/components/Footer/FooterNav";
 import SocialButton from "@/ui/SocialButton/SocialButton";
 import { getYear } from "@/Utils/getYear";
+import { useInView } from "react-intersection-observer";
+import { useRecoilState } from "recoil";
+import { ToTopButtonState } from "@/atoms/ToTopButtonAtom";
+import { checkSlug } from "@/Utils/checkSlug";
 
 const Footer: React.FC = () => {
+  const [toTopState, setToTopState] = useRecoilState(ToTopButtonState);
+  const { ref, inView, entry } = useInView({
+    threshold: 0,
+    rootMargin: "-80px",
+  });
+
+  React.useEffect(() => {
+    setToTopState((prev) => ({
+      ...prev,
+      isFixed: !inView,
+    }));
+  }, [inView]);
+
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} ref={ref}>
       <div className={styles.top}>
         <div className={"container"}>
           <div className={"md:flex flex-wrap xl:flex-nowrap xl:gap-20"}>

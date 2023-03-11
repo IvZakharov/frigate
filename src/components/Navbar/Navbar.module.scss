@@ -1,0 +1,63 @@
+@import "src/styles/variables";
+
+.navbar {
+  display: none;
+  height: 60px;
+  background-color: $background;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.nav {
+  ul {
+    display: flex;
+    gap: 20px;
+
+    @media (min-width: 1320px) {
+      gap: 40px;
+    }
+
+    li {
+      a {
+        transition: color 0.3s ease-in-out;
+        color: $gray;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+        &:hover,
+        &:active {
+          color: $black;
+        }
+      }
+      svg {
+        path {
+          transition: fill 0.3s ease-in-out;
+          fill: $gray;
+        }
+        &:hover {
+          path {
+            fill: $black;
+          }
+        }
+      }
+
+      .active {
+        color: $black;
+
+        path {
+          fill: $black;
+        }
+      }
+    }
+  }
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 101;
+}

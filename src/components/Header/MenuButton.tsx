@@ -1,7 +1,6 @@
 import styles from "./Header.module.scss";
 import React from "react";
-import { useRecoilState, useRecoilValue } from "recoil";
-
+import { useRecoilState } from "recoil";
 import { MenuModalState } from "@/atoms/MenuModalAtom";
 
 const MenuButton: React.FC = () => {

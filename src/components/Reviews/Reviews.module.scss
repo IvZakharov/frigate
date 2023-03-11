@@ -1,6 +1,7 @@
 @import "src/styles/variables";
 
 .reviews {
+  overflow-x: hidden;
   .video {
     position: relative;
     width: 100%;
