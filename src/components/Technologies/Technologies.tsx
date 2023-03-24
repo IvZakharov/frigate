@@ -27,7 +27,7 @@ const Technologies: React.FC = () => {
             {technologies.map(
               (obj, idx) =>
                 activeTab === idx && (
-                  <div className={styles.image}>
+                  <div className={styles.image} key={"image" + idx}>
                     <Image
                       alt={obj.title}
                       src={obj.image}

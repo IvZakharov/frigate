@@ -4,7 +4,56 @@
   padding-top: 70px;
   padding-bottom: 50px;
 
-  @media (min-width: 1320px) {
-    padding-top: 155px;
+  @media (min-width: 768px) {
+    padding-right: 60px;
+  }
+
+  .title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 30px;
+
+    @media (min-width: 1320px) {
+      font-size: 50px;
+      line-height: 61px;
+    }
+  }
+
+  .content {
+    @media (min-width: 768px) {
+      max-height: 100vh;
+      overflow-y: scroll;
+      padding-right: 60px;
+
+      &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        border: 1px solid blue;
+        width: 50px;
+      }
+
+      &::-webkit-scrollbar {
+        width: 50px;
+        background-color: blue;
+        border-radius: 10px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        border-radius: 100%;
+
+        border: 5px solid blue;
+        background-color: transparent;
+        border-top: 60px solid green;
+      }
+    }
+    p {
+      font-size: 14px;
+      line-height: 130%;
+      margin-bottom: 30px;
+
+      @media (min-width: 1320px) {
+        font-size: 16px;
+      }
+    }
   }
 }

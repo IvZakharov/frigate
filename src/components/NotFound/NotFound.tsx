@@ -16,7 +16,8 @@ const NotFound: React.FC = () => {
             <p className={styles.subtitle}>error</p>
             <h1 className={styles.title}>404</h1>
             <p className={styles.text}>
-              We can't seem to find the page you're looking for. Error code: 404
+              We can&apos;t seem to find the page you&apos;re looking for. Error
+              code: 404
             </p>
 
             <div className={"flex gap-2.5"}>

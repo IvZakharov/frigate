@@ -52,9 +52,9 @@ const Advantages: React.FC = () => {
         >
           <div className={"mb-7"}>
             <p className={styles.quote}>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim,
-              metus"
+              &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
+              dignissim, metus&quot;
             </p>
             <h4 className={`${styles.name} ${patuaOne.className}`}>
               Darlene Robertson
@@ -66,9 +66,9 @@ const Advantages: React.FC = () => {
 
           <div className={"mb-7"}>
             <p className={styles.quote}>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-              "
+              &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
+              dignissim, metus &quot;
             </p>
             <h4 className={`${styles.name} ${patuaOne.className}`}>
               Bessie Cooper

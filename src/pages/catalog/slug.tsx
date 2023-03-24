@@ -1,4 +1,3 @@
-import { MainLayout } from "@/layouts/MainLayout";
 import BackLink from "@/components/Shared/BackLink/BackLink";
 import ProductGallery from "@/components/Product/Gallery/ProductGallery";
 import StarRating from "@/components/Product/StarRating/StarRating";
@@ -69,70 +68,68 @@ const product = {
 
 export default function ProductPage() {
   return (
-    <MainLayout>
-      <>
-        <div className={"container relative py-16"}>
-          <div className={"absolute z-10"}>
-            <BackLink slug={"/catalog"} />
+    <>
+      <div className={"container relative py-16"}>
+        <div className={"absolute z-10"}>
+          <BackLink slug={"/catalog"} />
+        </div>
+        <div className={"grid grid-cols-1 md:grid-cols-2"}>
+          <div>
+            <ProductGallery images={product.imagesArr} />
+            <div
+              className={
+                "flex justify-end flex-col items-end pr-8 w-full transform -translate-y-14 relative z-10 gap-5 md:flex-row md:translate-y-0"
+              }
+            >
+              <StarRating defaultRating={product.rating} />
+              <ReviewButton />
+            </div>
           </div>
-          <div className={"grid grid-cols-1 md:grid-cols-2"}>
-            <div>
-              <ProductGallery images={product.imagesArr} />
-              <div
-                className={
-                  "flex justify-end flex-col items-end pr-8 w-full transform -translate-y-14 relative z-10 gap-5 md:flex-row md:translate-y-0"
-                }
-              >
-                <StarRating defaultRating={product.rating} />
-                <ReviewButton />
-              </div>
+
+          <div>
+            <div className={"mb-3"}>
+              <ProductCategories categories={product.categories} />
+            </div>
+            <div className={"mb-10"}>
+              <ProductInfo
+                title={product.title}
+                description={product.description}
+              />
+            </div>
+            <div className={"mb-10"}>
+              <h4 className={"productCatTitle mb-1"}>Colors</h4>
+              <p className={"text-sm mb-4"}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <ProductColors colors={product.colors} />
+            </div>
+            <div className={"mb-10"}>
+              <h4 className={"productCatTitle mb-4"}>Type of phins</h4>
+              <ProductPhins phins={product.phins} />
+            </div>
+            <div className={"mb-4"}>
+              <h4 className={"productCatTitle mb-1.5"}>Volume</h4>
+              <ProductVolume volume={product.volume} />
+            </div>
+            <div className={"mb-10"}>
+              <ProductAttributes attributes={product.attributes} />
             </div>
 
-            <div>
-              <div className={"mb-3"}>
-                <ProductCategories categories={product.categories} />
-              </div>
-              <div className={"mb-10"}>
-                <ProductInfo
-                  title={product.title}
-                  description={product.description}
-                />
-              </div>
-              <div className={"mb-10"}>
-                <h4 className={"productCatTitle mb-1"}>Colors</h4>
-                <p className={"text-sm mb-4"}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <ProductColors colors={product.colors} />
-              </div>
-              <div className={"mb-10"}>
-                <h4 className={"productCatTitle mb-4"}>Type of phins</h4>
-                <ProductPhins phins={product.phins} />
-              </div>
-              <div className={"mb-4"}>
-                <h4 className={"productCatTitle mb-1.5"}>Volume</h4>
-                <ProductVolume volume={product.volume} />
-              </div>
-              <div className={"mb-10"}>
-                <ProductAttributes attributes={product.attributes} />
-              </div>
+            <div
+              className={
+                "fixed bottom-0 left-0 z-20 w-full py-3 px-4 background md:relative"
+              }
+            >
+              <ProductPrice price={product.price} status={product.status} />
+            </div>
 
-              <div
-                className={
-                  "fixed bottom-0 left-0 z-20 w-full py-3 px-4 background md:relative"
-                }
-              >
-                <ProductPrice price={product.price} status={product.status} />
-              </div>
-
-              <div className={"mb-10"}>
-                <h4 className={"productCatTitle mb-4"}>Product details:</h4>
-                <ProductDetails details={product.details} />
-              </div>
+            <div className={"mb-10"}>
+              <h4 className={"productCatTitle mb-4"}>Product details:</h4>
+              <ProductDetails details={product.details} />
             </div>
           </div>
         </div>
-      </>
-    </MainLayout>
+      </div>
+    </>
   );
 }

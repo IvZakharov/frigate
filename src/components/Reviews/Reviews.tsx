@@ -70,7 +70,7 @@ const Reviews: React.FC = () => {
               >
                 {reviews.map((obj, idx) => (
                   <SwiperSlide key={"thumb" + idx} className={styles.slide}>
-                    <div className={styles.thumb}>
+                    <div className={styles.thumb} key={"thumb" + idx}>
                       <Image
                         alt={"board"}
                         src={obj.placeholder}
@@ -98,6 +98,7 @@ const Reviews: React.FC = () => {
                   authorName={obj.authorName}
                   authorQuote={obj.authorQuote}
                   socials={obj.socials}
+                  key={idx}
                 />
               )
           )}

@@ -9,7 +9,6 @@ import { getYear } from "@/Utils/getYear";
 import { useInView } from "react-intersection-observer";
 import { useRecoilState } from "recoil";
 import { ToTopButtonState } from "@/atoms/ToTopButtonAtom";
-import { checkSlug } from "@/Utils/checkSlug";
 
 const Footer: React.FC = () => {
   const [toTopState, setToTopState] = useRecoilState(ToTopButtonState);

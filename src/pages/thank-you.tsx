@@ -1,4 +1,3 @@
-import { MainLayout } from "@/layouts/MainLayout";
 import ThankYou from "@/components/ThankYou/ThankYou";
 import { useRecoilState } from "recoil";
 import { ToTopButtonState } from "@/atoms/ToTopButtonAtom";
@@ -14,9 +13,5 @@ export default function ThankYouPage() {
     }));
   }, []);
 
-  return (
-    <MainLayout>
-      <ThankYou />
-    </MainLayout>
-  );
+  return <ThankYou />;
 }

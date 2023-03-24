@@ -42,7 +42,7 @@ const ReviewContent: React.FC<ReviewContentProps> = ({
   return (
     <div className={styles.content}>
       <div className={"flex items-center mb-4 "}>
-        <p className={"text mr-4"}>Author's rating</p>
+        <p className={"text mr-4"}>Author&apos;s rating</p>
         <ReviewRating rating={rating} />
       </div>
       <h4 className={`${styles.authorName} ${patuaOne.className}`}>

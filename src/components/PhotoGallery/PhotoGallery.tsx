@@ -2,7 +2,7 @@ import styles from "./PhotoGallery.module.scss";
 import React from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Lazy, Grid, Pagination } from "swiper";
+import { Grid, Pagination } from "swiper";
 import MyFancybox from "@/components/Shared/Fancybox/Fancybox";
 
 type Image = {

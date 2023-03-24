@@ -115,6 +115,7 @@ const Crew: React.FC = () => {
                       quote={obj.quote}
                       socials={obj.socials}
                       features={obj.features}
+                      key={idx}
                     />
                   )
               )}
