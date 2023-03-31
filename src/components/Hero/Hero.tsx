@@ -98,7 +98,7 @@ const Hero: React.FC = () => {
 
       <div className={`${styles.bgImage} lg:hidden`}>
         <Image
-          alt="Mountains"
+          alt="wave"
           src={"/images/hero/mobile.jpg"}
           quality={80}
           fill
@@ -112,7 +112,7 @@ const Hero: React.FC = () => {
 
       <div className={`${styles.bgImage} hidden lg:inline-flex`}>
         <Image
-          alt="Mountains"
+          alt="wave"
           src={"/images/hero/desk.jpg"}
           quality={80}
           fill
@@ -140,7 +140,7 @@ const Hero: React.FC = () => {
 
       <div className={`${styles.waveBottomImage} md:hidden`}>
         <Image
-          alt="Mountains"
+          alt="wave"
           src={"/images/hero/waveMobile.png"}
           quality={80}
           fill
@@ -154,7 +154,7 @@ const Hero: React.FC = () => {
 
       <div className={`${styles.waveBottomImage} hidden md:inline-flex`}>
         <Image
-          alt="Mountains"
+          alt="wave"
           src={"/images/hero/waveBottomDesk.png"}
           quality={80}
           fill
