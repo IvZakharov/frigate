@@ -16,7 +16,7 @@ const ProductPrice: React.FC<ProductPriceProps> = ({ price, status }) => {
             {price.actual}
           </p>
           {status === "sale" && (
-            <div className={"flex flex-col items-center"}>
+            <div className={"flex flex-col items-center xl:mr-4"}>
               <p className={styles.discount}>
                 <b>20%</b> off
               </p>

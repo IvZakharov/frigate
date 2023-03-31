@@ -11,7 +11,7 @@ const JournalCard: React.FC<JournalCardProps> = ({
   date,
 }) => {
   return (
-    <Link href={""}>
+    <Link href={"/journal/slug"}>
       <article className={styles.card}>
         <div className={styles.image}>
           {thumbnail && (

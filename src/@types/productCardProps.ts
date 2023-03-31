@@ -5,4 +5,5 @@ export type ProductCardProps = {
   price: { actual: string; old: string };
   length: string;
   thickness: string;
+  slug: string;
 };

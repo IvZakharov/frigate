@@ -18,7 +18,7 @@ const ProductGallery: React.FC<ProductGalleryProps> = ({ images }) => {
 
   return (
     <div className={styles.gallery}>
-      <div className={"flex"}>
+      <div className={"flex xl:gap-20"}>
         <div className={"w-1/2 md:order-1"}>
           <Swiper
             spaceBetween={20}
@@ -53,7 +53,7 @@ const ProductGallery: React.FC<ProductGalleryProps> = ({ images }) => {
         <div className={"w-1/2"}>
           <Swiper
             onSwiper={setThumbsSwiper}
-            spaceBetween={0}
+            spaceBetween={10}
             slidesPerView={"auto"}
             watchSlidesProgress={true}
             modules={[Thumbs]}

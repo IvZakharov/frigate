@@ -87,23 +87,23 @@ export default function ProductPage() {
           </div>
 
           <div>
-            <div className={"mb-3"}>
+            <div className={"mb-3 xl:mb-4"}>
               <ProductCategories categories={product.categories} />
             </div>
-            <div className={"mb-10"}>
+            <div className={"mb-10 xl:mb-16"}>
               <ProductInfo
                 title={product.title}
                 description={product.description}
               />
             </div>
-            <div className={"mb-10"}>
+            <div className={"mb-10 xl:mb-16"}>
               <h4 className={"productCatTitle mb-1"}>Colors</h4>
               <p className={"text-sm mb-4"}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               </p>
               <ProductColors colors={product.colors} />
             </div>
-            <div className={"mb-10"}>
+            <div className={"mb-10 xl:mb-16"}>
               <h4 className={"productCatTitle mb-4"}>Type of phins</h4>
               <ProductPhins phins={product.phins} />
             </div>
@@ -117,7 +117,7 @@ export default function ProductPage() {
 
             <div
               className={
-                "fixed bottom-0 left-0 z-20 w-full py-3 px-4 background md:relative"
+                "fixed bottom-0 left-0 z-20 w-full py-3 px-4 background md:relative md:z-0 md:mb-16"
               }
             >
               <ProductPrice price={product.price} status={product.status} />

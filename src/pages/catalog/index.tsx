@@ -7,7 +7,7 @@ import CtaCard from "@/components/Cta/CtaCard";
 export default function Catalog() {
   return (
     <>
-      <div className={"container py-16 md:pt-8 md:pb-10"}>
+      <div className={"container py-16 md:pt-8 md:pb-8"}>
         <Title variant={"h1"}>Catalog</Title>
       </div>
       <CatalogFilters />
@@ -15,7 +15,7 @@ export default function Catalog() {
       <div className={"container"}>
         <div
           className={
-            "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 md:gap-3 pt-10 pb-10 xl:pt-16 pb-20"
+            "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 pb-20 md:gap-3"
           }
         >
           {products.map((product, idx) => (
@@ -27,6 +27,7 @@ export default function Catalog() {
               length={product.length}
               thickness={product.thickness}
               key={idx}
+              slug={"/catalog/slug"}
             />
           ))}
           <CtaCard />

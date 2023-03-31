@@ -16,7 +16,7 @@ const SwiperArticle: React.FC = () => {
   const arrowNext = React.useRef<HTMLButtonElement>(null);
 
   return (
-    <section>
+    <section className={"overflow-x-hidden"}>
       <div className={"container"}>
         <div className={"relative lg:grid lg:grid-cols-4"}>
           <div className={"lg:col-span-3"}>

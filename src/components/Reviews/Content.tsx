@@ -82,6 +82,7 @@ const ReviewContent: React.FC<ReviewContentProps> = ({
             <>
               {item.name === "facebook" && (
                 <SocialButton
+                  key={idx}
                   link={item.url}
                   theme={"light"}
                   social={item.name}
@@ -89,6 +90,7 @@ const ReviewContent: React.FC<ReviewContentProps> = ({
               )}
               {item.name === "instagram" && (
                 <SocialButton
+                  key={idx}
                   link={item.url}
                   theme={"light"}
                   social={item.name}
@@ -96,6 +98,7 @@ const ReviewContent: React.FC<ReviewContentProps> = ({
               )}
               {item.name === "twitter" && (
                 <SocialButton
+                  key={idx}
                   link={item.url}
                   theme={"light"}
                   social={item.name}
@@ -103,6 +106,7 @@ const ReviewContent: React.FC<ReviewContentProps> = ({
               )}
               {item.name === "youtube" && (
                 <SocialButton
+                  key={idx}
                   link={item.url}
                   theme={"light"}
                   social={item.name}

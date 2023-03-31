@@ -3,6 +3,7 @@ import React from "react";
 import type { ProductCardProps } from "@/@types/productCardProps";
 import FavoriteButton from "@/components/Product/Card/FavoriteButton";
 import CardSwiper from "@/components/Product/Card/CardSwiper";
+import Link from "next/link";
 
 const ProductCard: React.FC<ProductCardProps> = ({
   title,
@@ -11,9 +12,11 @@ const ProductCard: React.FC<ProductCardProps> = ({
   price,
   length,
   thickness,
+  slug,
 }) => {
   return (
-    <article
+    <Link
+      href={slug}
       className={`${styles.card} ${status === "new" && styles.new} ${
         status === "sale" && styles.sale
       }`}
@@ -70,7 +73,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
           </div>
         </div>
       </div>
-    </article>
+    </Link>
   );
 };
 

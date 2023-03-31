@@ -48,7 +48,7 @@ export const MainLayout: React.FC<Page> = ({ children }) => {
   return (
     <>
       <Head>
-        <title>{""}</title>
+        <title>{"Frigate"}</title>
         <meta name="description" content={""} />
         <meta name="keywords" content={"keywords"} />
         <meta property="og:image" content="/img/head/meta.jpg" />

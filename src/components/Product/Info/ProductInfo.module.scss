@@ -5,8 +5,11 @@
   font-size: 30px;
   line-height: 90%;
   color: #333333;
-
   margin-bottom: 15px;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 30px;
+  }
 }
 
 .description {
@@ -14,4 +17,8 @@
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+
+  @media (min-width: 1200px) {
+    font-size: 16px;
+  }
 }

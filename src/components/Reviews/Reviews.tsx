@@ -98,7 +98,7 @@ const Reviews: React.FC = () => {
                   authorName={obj.authorName}
                   authorQuote={obj.authorQuote}
                   socials={obj.socials}
-                  key={idx}
+                  key={"review content" + idx}
                 />
               )
           )}

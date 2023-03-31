@@ -102,6 +102,7 @@ const Hero: React.FC = () => {
           src={"/images/hero/mobile.jpg"}
           quality={80}
           fill
+          priority
           sizes="100vw"
           style={{
             objectFit: "cover",
@@ -115,6 +116,7 @@ const Hero: React.FC = () => {
           src={"/images/hero/desk.jpg"}
           quality={80}
           fill
+          priority
           sizes="100vw"
           style={{
             objectFit: "cover",
@@ -128,6 +130,7 @@ const Hero: React.FC = () => {
           src={"/images/hero/waveTopMobile.png"}
           quality={80}
           fill
+          priority
           sizes="100vw"
           style={{
             objectFit: "cover",
@@ -141,6 +144,7 @@ const Hero: React.FC = () => {
           src={"/images/hero/waveMobile.png"}
           quality={80}
           fill
+          priority
           sizes="100vw"
           style={{
             objectFit: "cover",
@@ -154,6 +158,7 @@ const Hero: React.FC = () => {
           src={"/images/hero/waveBottomDesk.png"}
           quality={80}
           fill
+          priority
           sizes="100vw"
           style={{
             objectFit: "cover",
