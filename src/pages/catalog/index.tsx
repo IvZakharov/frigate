@@ -30,7 +30,6 @@ export default function Catalog() {
               slug={"/catalog/slug"}
             />
           ))}
-          <CtaCard />
         </div>
       </div>
     </>

@@ -152,7 +152,7 @@ const Hero: React.FC = () => {
         />
       </div>
 
-      <div className={`${styles.waveBottomImage} hidden md:inline-flex`}>
+      <div className={`${styles.waveBottomImage} hidden md:block`}>
         <Image
           alt="wave"
           src={"/images/hero/waveBottomDesk.png"}
