@@ -20,7 +20,11 @@ const Header: React.FC = () => {
             <SocialButton link={"#"} theme={"light"} social={"twitter"} />
             <SocialButton link={"#"} theme={"light"} social={"youtube"} />
           </div>
-
+          <div className={"md:hidden"}>
+            <button className={"buttonGradient buttonGradient--header"}>
+              <span>custom board</span>
+            </button>
+          </div>
           <MenuButton />
         </div>
       </div>

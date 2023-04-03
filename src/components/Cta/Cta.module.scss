@@ -59,17 +59,18 @@
 
 .ctaCard {
   border-radius: 10px;
-  display: none;
-
-  @media (min-width: 1320px) {
-    display: block;
-  }
+  height: 100%;
+  overflow: hidden;
 
   .container {
     flex-direction: column;
     justify-content: flex-end;
     height: 100%;
-    padding: 60px 30px 35px;
+    padding: 60px 30px 30px;
+
+    @media (min-width: 1200px) {
+      padding: 60px 30px 35px;
+    }
 
     .bgImage {
       position: absolute;
@@ -80,22 +81,65 @@
     }
 
     .title {
-      font-size: 24px;
+      font-size: 14px;
       line-height: 90%;
       font-weight: 900;
+      text-align: center;
       display: flex;
       align-items: center;
-      margin-bottom: 20px;
+
       position: relative;
+      margin-bottom: 10px;
+
+      @media (min-width: 768px) {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      @media (min-width: 1320px) {
+        font-size: 24px;
+      }
     }
 
     .text {
       font-weight: 400;
-      font-size: 16px;
-      line-height: 19px;
-      margin-bottom: 94px;
+      font-size: 10px;
+      line-height: 11px;
       color: rgba(51, 51, 51, 0.6);
       position: relative;
+      text-align: center;
+      margin-right: 0;
+      display: block;
+      margin-bottom: 20px;
+
+      @media (min-width: 768px) {
+        margin-bottom: 80px;
+        font-size: 12px;
+        line-height: 15px;
+        padding: 0 20px;
+      }
+
+      @media (min-width: 1320px) {
+        margin-bottom: 94px;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+    .button {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      span {
+        letter-spacing: 0.3em;
+        font-size: 8px;
+
+        @media (min-width: 768px) {
+          font-size: 11px;
+        }
+
+        @media (min-width: 1320px) {
+          font-size: 14px;
+        }
+      }
     }
   }
 }
@@ -158,8 +202,16 @@
       .button {
         padding: 15px 45px;
         border-radius: 30px;
-        background: linear-gradient(90deg, #fd8d1b -0.12%, #fe5d0b 99.88%);
-        box-shadow: 0px 2.24988px 7.49961px rgba(0, 0, 0, 0.11);
+        background-size: 200% auto;
+        cursor: pointer;
+        transition: all 1s $timing;
+        background-image: linear-gradient(
+          to right,
+          #fd8d1b 0,
+          #fe5d0b 50%,
+          #fd8d1b 100%
+        );
+        box-shadow: 0 2.24988px 7.49961px rgba(0, 0, 0, 0.11);
         display: flex;
         align-items: center;
 
@@ -186,6 +238,10 @@
             font-size: 18px;
             line-height: 22px;
           }
+        }
+
+        &:hover {
+          background-position: right center;
         }
       }
     }

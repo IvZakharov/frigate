@@ -21,8 +21,10 @@ const Cta: React.FC = () => {
         </div>
 
         <h3 className={styles.title}>Custom board</h3>
-        <p className={styles.text}>Contact us if you want a custom board</p>
-        <button className={"buttonGradient buttonGradient--mobileMenu"}>
+        <p className={styles.text}>Contact us if you want to custom board</p>
+        <button
+          className={`${styles.button} buttonGradient buttonGradient--mobileMenu`}
+        >
           <i>
             <svg
               width="15"

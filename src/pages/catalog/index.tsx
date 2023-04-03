@@ -3,6 +3,7 @@ import CatalogFilters from "@/components/CatalogFilters/CatalogFilters";
 import { products } from "@/data/products";
 import ProductCard from "@/components/Product/Card/ProductCard";
 import CtaCard from "@/components/Cta/CtaCard";
+import React from "react";
 
 export default function Catalog() {
   return (
@@ -30,6 +31,18 @@ export default function Catalog() {
               slug={"/catalog/slug"}
             />
           ))}
+
+          <div className={"md:hidden"}>
+            {products.length % 2 !== 0 ? <CtaCard /> : null}
+          </div>
+
+          <div className={"hidden md:block lg:hidden"}>
+            {products.length % 3 !== 0 ? <CtaCard /> : null}
+          </div>
+
+          <div className={"hidden lg:block"}>
+            {products.length % 4 !== 0 ? <CtaCard /> : null}
+          </div>
         </div>
       </div>
     </>

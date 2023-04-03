@@ -15,6 +15,11 @@
       path {
         transition: fill 0.2s ease-in-out;
       }
+
+      @media (min-width: 768px) {
+        width: 32px;
+        height: 12px;
+      }
     }
   }
 
@@ -24,6 +29,10 @@
     line-height: 90%;
     color: #bfbfbf;
     transition: color 0.2s ease-in-out;
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
   }
 
   &:hover {

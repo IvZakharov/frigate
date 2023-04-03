@@ -78,7 +78,7 @@ export default function ProductPage() {
             <ProductGallery images={product.imagesArr} />
             <div
               className={
-                "flex justify-end flex-col items-end pr-8 w-full transform -translate-y-14 relative z-10 gap-5 md:flex-row md:translate-y-0"
+                "flex justify-end flex-col items-end pr-8 w-full transform -translate-y-14 relative z-10 gap-5 md:flex-row md:translate-y-0 md:justify-start md:mt-12 xl:mt-16 xl:gap-16"
               }
             >
               <StarRating defaultRating={product.rating} />
@@ -114,7 +114,6 @@ export default function ProductPage() {
             <div className={"mb-10"}>
               <ProductAttributes attributes={product.attributes} />
             </div>
-
             <div
               className={
                 "fixed bottom-0 left-0 z-20 w-full py-3 px-4 background md:relative md:z-0 md:mb-16"
@@ -122,7 +121,6 @@ export default function ProductPage() {
             >
               <ProductPrice price={product.price} status={product.status} />
             </div>
-
             <div className={"mb-10"}>
               <h4 className={"productCatTitle mb-4"}>Product details:</h4>
               <ProductDetails details={product.details} />

@@ -81,6 +81,7 @@
     font-weight: 500;
     text-transform: uppercase;
     color: #ffffff;
+    white-space: nowrap;
   }
 
   &--mobileMenu {
@@ -97,6 +98,7 @@
   &--header {
     font-size: 12px;
     line-height: 14px;
+    padding: 8px 12px;
   }
 }
 

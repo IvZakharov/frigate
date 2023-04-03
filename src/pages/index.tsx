@@ -29,7 +29,7 @@ export default function Home() {
             "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 md:gap-3 pt-10 pb-10 xl:pt-16 pb-20"
           }
         >
-          {products.slice(0, 3).map((product, idx) => (
+          {products.slice(0, 4).map((product, idx) => (
             <ProductCard
               title={product.title}
               status={product.status}
@@ -41,7 +41,10 @@ export default function Home() {
               slug={"/catalog/slug"}
             />
           ))}
-          <CtaCard />
+
+          <div className={"hidden md:block lg:hidden"}>
+            <CtaCard />
+          </div>
         </div>
       </div>
 
