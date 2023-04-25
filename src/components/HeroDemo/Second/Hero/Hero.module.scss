@@ -1,0 +1,74 @@
+@import "src/styles/variables";
+
+.hero {
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: 1024px) {
+    min-height: 700px;
+    padding-top: 30px;
+  }
+
+  .subtitleList {
+    display: none;
+
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin-right: 30px;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 130%;
+      color: #333333;
+    }
+  }
+
+  .title {
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 145px;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+
+  .description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #333333;
+    padding-right: 100px;
+
+    @media (min-width: 1024px) {
+      padding-right: 0;
+    }
+  }
+
+  .button {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 12px 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    height: 52px;
+
+    background: linear-gradient(90deg, #fd8d1b -0.12%, #fe5d0b 99.88%);
+    box-shadow: 3px -2px 37px rgba(0, 0, 0, 0.18);
+  }
+
+  .content {
+    width: 420px;
+    min-width: 420px;
+    margin-right: 130px;
+  }
+
+  .sliderWrap {
+    width: 1060px;
+  }
+}

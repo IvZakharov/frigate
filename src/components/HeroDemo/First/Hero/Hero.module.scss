@@ -1,0 +1,26 @@
+@import "src/styles/variables";
+
+.hero {
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+
+  .title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 145px;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+
+  .image {
+    display: flex;
+    justify-content: flex-end;
+    transform: translateX(96px);
+    img {
+      min-width: 754px;
+      min-height: 461px;
+    }
+  }
+}

@@ -176,3 +176,43 @@ h5 {
     display: none !important;
   }
 }
+
+.heroDemoSwiper {
+  .swiper-pagination {
+    position: relative !important;
+    border-radius: 30px;
+    bottom: 0 !important;
+
+    display: block !important;
+    background-color: rgba(#000, 0.2);
+    padding: 9px 11px !important;
+    padding-bottom: 3px !important;
+    width: fit-content !important;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 20px !important;
+    height: 20px !important;
+    border: 1.6px solid white;
+    opacity: 0.5 !important;
+    transition: all 0.2s ease-in-out;
+    background-color: transparent !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: white !important;
+    border: 1.6px solid white !important;
+    opacity: 1 !important;
+  }
+}
+
+.heroDemoSwiper2 {
+  .swiper-pagination {
+    display: block !important;
+    width: fit-content !important;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}

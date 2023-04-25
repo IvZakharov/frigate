@@ -10,44 +10,14 @@ import PhotoGallery from "@/components/PhotoGallery/PhotoGallery";
 import VideoGallery from "@/components/VideoGallery/VideoGallery";
 import Technologies from "@/components/Technologies/Technologies";
 
-import { products } from "@/data/products";
-import ProductCard from "@/components/Product/Card/ProductCard";
-import CtaCard from "@/components/Cta/CtaCard";
-import Title from "@/components/Shared/Title/Title";
 import Cta from "@/components/Cta/Cta";
+import HeroDemo3 from "@/components/HeroDemo/Third/Hero/Hero";
 
-export default function Home() {
+export default function HomeDemo() {
   return (
     <>
       <div className={"mt-24 mb-8 md:mb-16 md:mt-0"}>
-        <Hero />
-      </div>
-
-      <div className={"container"}>
-        <Title variant={"h2"}>Popular boards</Title>
-
-        <div
-          className={
-            "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 md:gap-3 pt-10 pb-10 xl:pt-16 pb-20"
-          }
-        >
-          {products.slice(0, 4).map((product, idx) => (
-            <ProductCard
-              title={product.title}
-              status={product.status}
-              images={product.images}
-              price={product.price}
-              length={product.length}
-              thickness={product.thickness}
-              key={idx}
-              slug={"/catalog/slug"}
-            />
-          ))}
-
-          <div className={"hidden md:block lg:hidden"}>
-            <CtaCard />
-          </div>
-        </div>
+        <HeroDemo3 />
       </div>
 
       <div className={"mb-16 md:mb-24 xl:mb-40"}>
