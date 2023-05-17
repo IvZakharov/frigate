@@ -141,8 +141,8 @@ const Hero: React.FC = () => {
       <div className={`${styles.waveBottomImage} hidden md:block`}>
         <Image
           alt="wave"
-          src={"/images/hero/waveBottomDesk.png"}
-          quality={80}
+          src={"/images/hero/waveBottomDesk2.png"}
+          quality={90}
           fill
           priority
           sizes="100vw"
