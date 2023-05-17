@@ -16,7 +16,7 @@ import HeroDemo1 from "@/components/HeroDemo/First/Hero/Hero";
 export default function HomeDemo() {
   return (
     <>
-      <div className={"mt-24 mb-8 md:mb-16 md:mt-0"}>
+      <div className={"mt-16 mb-8 md:mb-16 md:mt-0"}>
         <HeroDemo1 />
       </div>
 

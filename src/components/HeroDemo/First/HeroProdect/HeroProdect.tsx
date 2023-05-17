@@ -39,7 +39,13 @@ const HeroProduct: React.FC = () => {
           {products[0].images.map((image, idx) => (
             <SwiperSlide key={idx}>
               <div className={styles.image}>
-                <Image alt="Board" src={image} fill sizes="100vw" />
+                <Image
+                  alt="Board"
+                  src={image}
+                  width={300}
+                  height={600}
+                  sizes="100vw"
+                />
               </div>
             </SwiperSlide>
           ))}

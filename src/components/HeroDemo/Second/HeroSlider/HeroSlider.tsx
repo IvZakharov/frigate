@@ -20,8 +20,16 @@ const HeroSlider: React.FC = () => {
     <Swiper
       pagination={{ clickable: true }}
       modules={[Pagination]}
-      slidesPerView={4}
+      slidesPerView={2}
       spaceBetween={10}
+      breakpoints={{
+        1024: {
+          slidesPerView: 3,
+        },
+        1280: {
+          slidesPerView: 4,
+        },
+      }}
       className={`${styles.swiper} heroDemoSwiper2 relative`}
     >
       {products.map((product, idx) => (

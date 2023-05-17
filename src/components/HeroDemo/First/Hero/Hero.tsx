@@ -1,18 +1,12 @@
 import styles from "./Hero.module.scss";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { Niconne } from "@next/font/google";
-import { className } from "postcss-selector-parser";
 import HeroProduct from "@/components/HeroDemo/First/HeroProdect/HeroProdect";
 import ProductCategories from "@/components/Product/Categories/ProductCategories";
 import ProductInfo from "@/components/Product/Info/ProductInfo";
 import ProductColors from "@/components/Product/Colors/ProductColors";
 import ProductPhins from "@/components/Product/Phins/ProductPhins";
-import ProductVolume from "@/components/Product/Volume/ProductVolume";
-import ProductAttributes from "@/components/Product/Attributes/ProductAttributes";
-import ProductPrice from "@/components/Product/Price/ProductPrice";
-import ProductDetails from "@/components/Product/Details/ProductDetails";
 import DemoProductPrice from "@/components/HeroDemo/First/Price/DemoProductPrice";
 
 const niconne = Niconne({
@@ -79,30 +73,37 @@ const HeroDemo1: React.FC = () => {
   return (
     <section className={styles.hero}>
       <div className={"container h-full relative z-10"}>
-        <div className={"flex justify-between gap-16"}>
-          <div className={"pt-10 flex-1 w-64"}>
+        <div
+          className={
+            "md:flex md:flex-wrap xl:flex-nowrap md:justify-between md:gap-6 lg:gap-12 xl:gap-16"
+          }
+        >
+          <div className={" md:pt-10 md:w-full xl:flex-1 xl:w-64"}>
             <h1 className={`${niconne.className} ${styles.title}`}>Frigate</h1>
-            <p className={"text mb-20"}>
+            <p className={"text mb-4 xl:mb-20 md:max-w-sm"}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
               turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
               nec fringilla accumsan
             </p>
-            <div className={styles.image}>
-              <Image
-                src={"/images/demoHero/1.svg"}
-                alt={""}
-                priority
-                width={753}
-                height={461}
-              />
+
+            <div className={"hidden xl:block"}>
+              <div className={styles.image}>
+                <Image
+                  src={"/images/demoHero/1.svg"}
+                  alt={""}
+                  priority
+                  width={753}
+                  height={461}
+                />
+              </div>
             </div>
           </div>
 
-          <div className={"flex-1"}>
+          <div className={"md:w-1/2 flex-1"}>
             <HeroProduct />
           </div>
 
-          <div className={"pt-12 flex-1 w-64"}>
+          <div className={"pt-6 md:w-1/2 md:pt-0 xl:pt-12 flex-1 xl:w-64"}>
             <div className={"mb-3 xl:mb-4"}>
               <ProductCategories categories={product.categories} />
             </div>
@@ -124,12 +125,20 @@ const HeroDemo1: React.FC = () => {
               <ProductPhins phins={product.phins} />
             </div>
 
-            <div
-              className={
-                "fixed bottom-0 left-0 z-20 w-full py-3 px-4 background md:relative md:z-0 md:mb-16"
-              }
-            >
+            <div className={""}>
               <DemoProductPrice price={product.price} status={product.status} />
+            </div>
+          </div>
+
+          <div className={"md:hidden"}>
+            <div className={styles.image}>
+              <Image
+                src={"/images/demoHero/1.svg"}
+                alt={""}
+                priority
+                width={753}
+                height={461}
+              />
             </div>
           </div>
         </div>

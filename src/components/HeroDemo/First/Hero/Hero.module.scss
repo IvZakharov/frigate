@@ -8,10 +8,20 @@
   .title {
     font-style: normal;
     font-weight: 400;
-    font-size: 120px;
-    line-height: 145px;
+    font-size: 60px;
+    line-height: 73px;
     color: #333333;
     margin-bottom: 15px;
+
+    @media (min-width: 768px) {
+      font-size: 100px;
+      line-height: 112px;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 120px;
+      line-height: 145px;
+    }
   }
 
   .image {
