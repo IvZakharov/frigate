@@ -6,21 +6,18 @@
   overflow: hidden;
 
   .title {
-    font-style: normal;
     font-weight: 400;
-    font-size: 60px;
-    line-height: 73px;
+    font-size: 48px;
+    line-height: 59px;
+    /* identical to box height */
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
     color: #333333;
     margin-bottom: 15px;
 
-    @media (min-width: 768px) {
-      font-size: 100px;
-      line-height: 112px;
-    }
-
     @media (min-width: 1200px) {
-      font-size: 120px;
-      line-height: 145px;
+      font-size: 90px;
+      line-height: 90px;
     }
   }
 

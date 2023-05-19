@@ -9,8 +9,7 @@ const CtaMain: React.FC = () => {
         <div className={"container px-0"}>
           <div className={styles.content}>
             <h3 className={styles.title}>
-              WHANT CUSTOM <br />
-              SURFboard <br /> FOR YOU?
+              WANT a CUSTOM <br /> Surfboard FOR <br /> YOUrself?
             </h3>
 
             <div className={"flex justify-end"}>

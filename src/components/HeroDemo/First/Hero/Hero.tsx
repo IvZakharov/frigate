@@ -1,7 +1,7 @@
 import styles from "./Hero.module.scss";
 import React from "react";
 import Image from "next/image";
-import { Niconne } from "@next/font/google";
+
 import HeroProduct from "@/components/HeroDemo/First/HeroProdect/HeroProdect";
 import ProductCategories from "@/components/Product/Categories/ProductCategories";
 import ProductInfo from "@/components/Product/Info/ProductInfo";
@@ -9,7 +9,9 @@ import ProductColors from "@/components/Product/Colors/ProductColors";
 import ProductPhins from "@/components/Product/Phins/ProductPhins";
 import DemoProductPrice from "@/components/HeroDemo/First/Price/DemoProductPrice";
 
-const niconne = Niconne({
+import { Patua_One } from "@next/font/google";
+
+const patuaOne = Patua_One({
   weight: ["400"],
   style: ["normal"],
   subsets: ["latin"],
@@ -79,7 +81,7 @@ const HeroDemo1: React.FC = () => {
           }
         >
           <div className={" md:pt-10 md:w-full xl:flex-1 xl:w-64"}>
-            <h1 className={`${niconne.className} ${styles.title}`}>Frigate</h1>
+            <h1 className={`${patuaOne.className} ${styles.title}`}>Frigate</h1>
             <p className={"text mb-4 xl:mb-20 md:max-w-sm"}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
               turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus

@@ -1,10 +1,11 @@
 import styles from "./Hero.module.scss";
 import React from "react";
 import Link from "next/link";
-import { Niconne } from "@next/font/google";
 import HeroSlider from "@/components/HeroDemo/Second/HeroSlider/HeroSlider";
 
-const niconne = Niconne({
+import { Patua_One } from "@next/font/google";
+
+const patuaOne = Patua_One({
   weight: ["400"],
   style: ["normal"],
   subsets: ["latin"],
@@ -18,7 +19,7 @@ const HeroDemo2: React.FC = () => {
           <div
             className={`${styles.content} md:flex md:flex-col md:justify-center md:pr-10 h-auto `}
           >
-            <div className={"mb-8 md:mb-20"}>
+            <div className={"md:mb-20"}>
               <ul className={styles.subtitleList}>
                 <li>DARE</li>
                 <li>WE</li>
@@ -26,7 +27,7 @@ const HeroDemo2: React.FC = () => {
                 <li>THE</li>
                 <li>PERFECT?</li>
               </ul>
-              <h1 className={`${styles.title} ${niconne.className}`}>
+              <h1 className={`${styles.title} ${patuaOne.className}`}>
                 Frigate
               </h1>
               <p className={styles.description}>
