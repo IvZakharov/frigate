@@ -24,11 +24,11 @@ const MobileMenu: React.FC = () => {
           }}
           transition={{ duration: 0.6, ease: "easeInOut" }}
         >
-          <div className={styles.content}>
+          <div className={"pt-8"}>
             <div className={"mb-8"}>
-              <Cta />
+              <MobileNav />
             </div>
-            <MobileNav />
+            <Cta />
           </div>
         </motion.aside>
       )}

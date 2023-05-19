@@ -24,7 +24,9 @@ const Logo: React.FC<LogoProps> = ({ large }) => {
           width={24}
           height={26}
         />
-        <span className={patuaOne.className}>Frigate</span>
+        <h3 className={patuaOne.className}>
+          Frigate <small>surfboard</small>{" "}
+        </h3>
       </div>
     </Link>
   );

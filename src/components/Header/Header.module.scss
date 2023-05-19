@@ -97,25 +97,50 @@
 
   img {
     margin-right: 15px;
+    width: 23px;
+    height: 23px;
+
+    @media (min-width: 768px) {
+      width: 33px;
+      height: 33px;
+    }
   }
 
-  span {
+  h3 {
     font-size: 14px;
     line-height: 17px;
-    letter-spacing: 0.405em;
+    letter-spacing: 0.205em;
     text-transform: uppercase;
+
+    small {
+      font-weight: 400;
+      font-size: 7px;
+      line-height: 8px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.575em;
+      text-transform: uppercase;
+    }
 
     @media (min-width: 768px) {
       font-size: 18px;
       line-height: 22px;
+      letter-spacing: 0.405em;
+
+      small {
+        font-size: 10px;
+        line-height: 12px;
+
+        letter-spacing: 0.715em;
+      }
     }
   }
 }
 
 .logoLarge {
   img {
-    width: 37px;
-    height: 40px;
+    width: 33px;
+    height: 33px;
   }
 
   span {

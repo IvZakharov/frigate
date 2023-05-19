@@ -38,7 +38,7 @@ const HeroDemo2: React.FC = () => {
 
             <div
               className={
-                "fixed md:relative z-50 w-full px-2.5 bottom-2.5 left-0 md:px-0"
+                "fixed md:relative z-50 w-full px-2.5 bottom-4 left-0 md:px-0"
               }
             >
               <div

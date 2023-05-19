@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
           <div className={"md:flex flex-wrap xl:flex-nowrap xl:gap-20"}>
             <div className={"mb-10 pr-6 md:w-1/2 xl:w-1/4 xl:order-first"}>
               <div className={"mb-4"}>
-                <Logo large />
+                <Logo />
               </div>
               <p className={`${styles.description} mb-8  max-w-sm`}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
