@@ -101,11 +101,11 @@ const HeroDemo1: React.FC = () => {
 
               <p className={"text"}>
                 Hey there, have you ever wondered how surfboards are made? Well,
-                let me tell you, it's quite the process! First, you've got to
-                choose the right material. Most surfboards nowadays are made out
-                of foam and then coated with fiberglass. Once you've got your
-                material, the first step is to shape the blank - this is the
-                rough outline of the board.{" "}
+                let me tell you, it&apos;s quite the process! First, you&apos;ve
+                got to choose the right material. Most surfboards nowadays are
+                made out of foam and then coated with fiberglass. Once
+                you&apos;ve got your material, the first step is to shape the
+                blank - this is the rough outline of the board.{" "}
               </p>
             </div>
           </div>
@@ -159,11 +159,11 @@ const HeroDemo1: React.FC = () => {
 
             <p className={"text"}>
               Hey there, have you ever wondered how surfboards are made? Well,
-              let me tell you, it's quite the process! First, you've got to
-              choose the right material. Most surfboards nowadays are made out
-              of foam and then coated with fiberglass. Once you've got your
-              material, the first step is to shape the blank - this is the rough
-              outline of the board.{" "}
+              let me tell you, it&apos;s quite the process! First, you&apos;ve
+              got to choose the right material. Most surfboards nowadays are
+              made out of foam and then coated with fiberglass. Once you&apos;ve
+              got your material, the first step is to shape the blank - this is
+              the rough outline of the board.{" "}
             </p>
           </div>
         </div>
