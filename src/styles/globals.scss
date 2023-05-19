@@ -216,6 +216,14 @@ h5 {
 
 .heroDemoSwiper2 {
   padding-top: 40px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+
+  @media (min-width: 1240px) {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+  }
+
   .swiper-pagination {
     display: none !important;
     width: fit-content !important;

@@ -113,7 +113,7 @@ const Hero: React.FC = () => {
       <div className={`${styles.waveTopImage} md:hidden`}>
         <Image
           alt="Mountains"
-          src={"/images/hero/waveTopMobile.png"}
+          src={"/images/demoHero/6.svg"}
           quality={80}
           fill
           priority

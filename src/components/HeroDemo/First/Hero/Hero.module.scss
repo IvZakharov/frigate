@@ -16,18 +16,13 @@
     margin-bottom: 15px;
 
     @media (min-width: 1200px) {
-      font-size: 90px;
-      line-height: 90px;
+      font-size: 60px;
+      line-height: 72px;
     }
   }
 
   .image {
     display: flex;
     justify-content: flex-end;
-    transform: translateX(96px);
-    img {
-      min-width: 754px;
-      min-height: 461px;
-    }
   }
 }
