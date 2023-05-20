@@ -58,7 +58,7 @@ export default function Home() {
         <Technologies />
       </div>
 
-      <div className={"mb-24 md:mb-32 xl:mb-56"}>
+      <div className={"mb-16 md:mb-32 xl:mb-56"}>
         <Advantages />
       </div>
 

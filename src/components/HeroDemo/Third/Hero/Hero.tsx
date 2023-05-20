@@ -85,7 +85,7 @@ const Hero: React.FC = () => {
       <div className={`${styles.bgImage} lg:hidden`}>
         <Image
           alt="wave"
-          src={"/images/demoHero/4.jpg"}
+          src={"/images/demoHero/4mob.jpg"}
           quality={80}
           fill
           priority

@@ -5,7 +5,7 @@ import JournalCard from "@/components/Journal/Card/JournalCard";
 export default function Journal() {
   return (
     <>
-      <div className={"container py-16 md:pt-8 md:pb-8"}>
+      <div className={"container mt-16 mb-7 md:mt-8 md:mb-8 xl:mt-20 xl:mb-20"}>
         <Title variant={"h1"}>Journal</Title>
       </div>
 

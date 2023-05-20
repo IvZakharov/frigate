@@ -7,7 +7,7 @@ import SwiperArticle from "@/components/Journal/SwiperArticle/SwiperArticle";
 export default function Journal() {
   return (
     <>
-      <div className={"container pt-24 pb-10 xl:pb-24"}>
+      <div className={"container mt-16 mb-10 md:mt-8 xl:mt-16 xl:mb-16"}>
         <BackLink slug={"/journal"} />
       </div>
 
