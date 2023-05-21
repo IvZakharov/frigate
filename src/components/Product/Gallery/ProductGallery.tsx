@@ -3,10 +3,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/thumbs";
-
-import SwiperCore, { Thumbs } from "swiper";
+import SwiperCore from "swiper";
 import Image from "next/image";
 
 type ProductGalleryProps = {
@@ -14,7 +11,25 @@ type ProductGalleryProps = {
 };
 
 const ProductGallery: React.FC<ProductGalleryProps> = ({ images }) => {
-  const [thumbsSwiper, setThumbsSwiper] = React.useState<SwiperCore>();
+  const [swiper, setSwiper] = React.useState<SwiperCore>();
+  const [activeSlideIndex, setActiveSlideIndex] = React.useState<number>(0);
+
+  const handleChangeSlide = () => {
+    if (swiper) {
+      setActiveSlideIndex(swiper?.realIndex);
+    }
+  };
+
+  const handleClickThumb = (event: React.MouseEvent<HTMLDivElement>) => {
+    const item = event.currentTarget.tabIndex;
+
+    if (swiper) {
+      setActiveSlideIndex(item);
+      swiper.slideTo(item);
+    }
+  };
+
+  React.useEffect(() => {}, [swiper?.realIndex]);
 
   return (
     <div className={styles.gallery}>
@@ -22,13 +37,11 @@ const ProductGallery: React.FC<ProductGalleryProps> = ({ images }) => {
         <div className={"w-1/2 md:order-1"}>
           <Swiper
             spaceBetween={20}
-            thumbs={{
-              swiper:
-                thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
-            }}
-            modules={[Thumbs]}
+            initialSlide={activeSlideIndex}
             slideActiveClass={styles.activeSlide}
             className={styles.swiper}
+            onSwiper={setSwiper}
+            onSlideChange={handleChangeSlide}
           >
             {images.map((image, idx) => (
               <SwiperSlide key={"image" + idx}>
@@ -38,6 +51,7 @@ const ProductGallery: React.FC<ProductGalleryProps> = ({ images }) => {
                     src={image}
                     width={400}
                     height={700}
+                    priority={idx === 0}
                     sizes="50vw"
                     style={{
                       width: "100%",
@@ -51,36 +65,32 @@ const ProductGallery: React.FC<ProductGalleryProps> = ({ images }) => {
         </div>
 
         <div className={"w-1/2 md:w-auto"}>
-          <Swiper
-            onSwiper={setThumbsSwiper}
-            spaceBetween={10}
-            slidesPerView={"auto"}
-            watchSlidesProgress={true}
-            modules={[Thumbs]}
-            className={`${styles.swiperThumbs} swiperThumbs`}
-            direction={"vertical"}
-            wrapperClass={styles.wrapper}
-            loop
-          >
+          <div className={styles.thumbs}>
             {images.map((image, idx) => (
-              <SwiperSlide key={"thumb" + idx} className={styles.slide}>
-                <div className={styles.thumb}>
-                  <Image
-                    alt={"board"}
-                    src={image}
-                    quality={80}
-                    fill
-                    sizes="(max-width: 768px) 75vw,
-                            (max-width: 1200px) 40vw,
-                            33vw"
-                    style={{
-                      objectFit: "contain",
-                    }}
-                  />
-                </div>
-              </SwiperSlide>
+              <div
+                className={`${styles.thumb} ${
+                  idx === activeSlideIndex ? styles.active : ""
+                }`}
+                tabIndex={idx}
+                key={idx + "thumb"}
+                onClick={handleClickThumb}
+              >
+                <Image
+                  alt={"board"}
+                  src={image}
+                  quality={80}
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 75vw,
+                              (max-width: 1200px) 40vw,
+                              33vw"
+                  style={{
+                    objectFit: "contain",
+                  }}
+                />
+              </div>
             ))}
-          </Swiper>
+          </div>
         </div>
       </div>
     </div>

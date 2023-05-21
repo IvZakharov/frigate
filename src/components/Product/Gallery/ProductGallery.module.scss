@@ -30,13 +30,15 @@
   }
 }
 
-.swiperThumbs {
+.thumbs {
   position: relative;
   height: 100%;
   display: flex !important;
   align-items: center;
-
-  .slide {
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  .thumb {
     width: 82.25px !important;
     height: 77.84px !important;
     margin-left: auto;
@@ -49,6 +51,10 @@
       width: 112px !important;
       height: 106px !important;
     }
+  }
+
+  .active {
+    opacity: 1;
   }
 
   .wrapper {
