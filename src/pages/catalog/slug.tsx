@@ -14,10 +14,10 @@ import ProductPrice from "@/components/Product/Price/ProductPrice";
 
 const product = {
   id: 0,
-  title: "Chilli Rare Board",
+  title: "Stalker (Mini Malibu, longboard)",
   status: "sale",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.",
+    "The Stalker surfboard, also known as the Mini Malibu or longboard, is a versatile and stylish wave rider designed for surfers of all skill levels. With its wider outline and increased volume, it offers stability and buoyancy, making it perfect for beginners and those who prefer a relaxed surfing style. The board's easy paddling, ample foot space, and smooth maneuverability allow for effortless wave-catching and enjoyable rides. Crafted from durable materials and featuring a timeless design, the Stalker surfboard guarantees durability and visual appeal both on and off the water. Whether you're a beginner or an experienced surfer, the Stalker is your go-to board for an exceptional surfing experience.",
   imagesArr: [
     "/images/products/board.png",
     "/images/products/board.png",
